@@ -62,6 +62,11 @@
             </a>
           </li>
         </ul>
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu-toggle__icon" width="40" height="40">
+              <use href="./images/icons/sprites.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
       </div>
     </header>
     <!--унікальний контент-->
@@ -85,7 +90,7 @@
                 </svg>
               </div>
               <h3 class="feature__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="feature__text">
+              <p class="feature__text feature__text--marginNone">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
@@ -96,7 +101,7 @@
                 </svg>
               </div>
               <h3 class="feature__title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="feature__text">
+              <p class="feature__text feature__text--marginNone">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
@@ -107,7 +112,7 @@
                 </svg>
               </div>
               <h3 class="feature__title">ПЛАНУВАННЯ</h3>
-              <p class="feature__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+              <p class="feature__text feature__text--marginNone">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
             <li class="feature__item">
               <div class="feature__wrapper">
@@ -116,7 +121,7 @@
                 </svg>
               </div>
               <h3 class="feature__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="feature__text">
+              <p class="feature__text feature__text--marginNone">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -660,7 +665,55 @@
     </form>
   </div>
     </div>
+    <!-- MOBILE-MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+      <svg class="menu-toggle__icon" width="40" height="40">
+        <use href="./images/icons/sprites.svg#icon-close-burger"></use>
+      </svg>
+      </button>
+    
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Портфоліо</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Контакти</a>
+        </li>
+      </ul>
+    
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-contacts-link link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-contacts-link link">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Instagram</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Twitter</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Facebook</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <!-- SCRIPT -->
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

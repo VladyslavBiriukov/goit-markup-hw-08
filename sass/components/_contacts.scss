@@ -1,8 +1,9 @@
 .contacts {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    gap: 30px;
+    display: none;
+    // display: flex;
+    // align-items: center;
+    // margin-left: auto;
+    // gap: 30px;
 }
 .contacts__link {
     @extend %link;
