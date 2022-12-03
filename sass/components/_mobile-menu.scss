@@ -62,8 +62,8 @@
 
     width: 100vw;
     height: 100vh;
-    padding: 32px;
-    background-color: #3f51b5;
+    padding: 48px 40px;
+    background: #FFFFFF;
     z-index: 999;
 
     transform: translateX(100%);
@@ -78,7 +78,7 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    color: #fff;
+    color: var(--primary-white-color);
 }
 
 .mobile-menu {
@@ -89,14 +89,30 @@
     margin-bottom: auto;
 }
 
-.mobile-menu .link {
+.mobile-menu__link {
     display: block;
-    padding: 10px;
-    color: #fff;
+    margin-bottom: 32px;
+
+    color: var(--title-text-color);
     text-decoration: none;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+
+    &--current {
+        color: var(--accent-color);
+    }
 }
+
 
 .mobile-socials {
     display: flex;
     gap: 20px;
+}
+
+.menu-toggle__icon:hover 
+.menu-toggle__icon:focus {
+    fill: var(--accent-color);
 }

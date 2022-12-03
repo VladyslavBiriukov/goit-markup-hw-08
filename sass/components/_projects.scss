@@ -4,6 +4,15 @@
 
 .projects__item {
     @extend %card-set__item;
+    --items: 1;
+
+    @media screen and (min-width: 768px) {
+    --items: 2;
+    }
+        
+    @media screen and (min-width: 1200px) {
+    --items: 3;
+    }
 
     transition: box-shadow var(--animation-function);
 
@@ -14,13 +23,11 @@
 
 .projects__link {
     @extend %link;
-
-
 }
 
 .projects__content {
     padding: 20px 24px;
-    max-width: 370px;
+    width: 100%;
     border: 1px solid #eeeeee;
     border-top: none;
 }

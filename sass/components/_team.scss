@@ -5,22 +5,26 @@
 
 .team__list {
     @extend %card-set;
+    --items: 1;
 
-    &--amount {
-    --items: 4;
+    @media screen and (min-width: 768px) {
+            --items: 2;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            --items: 4;
+        }
 }
-}
+
 
 .team__item {
    @extend %card-set__item; 
 
-    &--shadow {
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-                  0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+   0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
 }
-  
-}
+
 .team__description {
     text-align: center;
     padding-top: 30px;
