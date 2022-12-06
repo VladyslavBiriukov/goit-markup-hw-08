@@ -9,7 +9,7 @@
 
     @media screen and (min-width: 768px) {
     margin-right: auto;
-        }
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 26px;
@@ -17,9 +17,14 @@
     }
 
     &--inversion {
-            margin-bottom: 20px;
-            color: rgba(255, 255, 255, 1);
+        align-items: center;
+        margin-bottom: 20px;
+        color: rgba(255, 255, 255, 1);
+
+        @media screen and (min-width: 768px) {
+        margin-right: 0;
         }
+    }
 }
 .logo__text {
     color: var(--accent-color);
