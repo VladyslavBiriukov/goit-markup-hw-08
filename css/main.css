@@ -1367,6 +1367,7 @@ ul {
   background-color: rgba(33, 33, 33, 0.2);
 }
 
-.menu-toggle__icon:hover .menu-toggle__icon:focus {
+.menu-toggle__icon:hover,
+.menu-toggle__icon:focus {
   fill: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */
