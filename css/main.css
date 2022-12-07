@@ -478,10 +478,6 @@ ul {
   }
 }
 
-.feature {
-  padding-bottom: 0;
-}
-
 .feature__list {
   --items: 1;
 }

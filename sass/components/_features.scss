@@ -1,6 +1,5 @@
 .feature {
     @extend %section;
-    padding-bottom: 0;
 }
 
 .feature__list {
@@ -49,4 +48,6 @@ line-height: calc(16 / 14);
 .feature__text {
     font-size: 14px;
     line-height: calc(24 / 14);
+
+
 }
