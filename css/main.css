@@ -1245,11 +1245,6 @@ ul {
   border-radius: 50%;
   outline: none;
 }
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
 
 .menu-toggle:hover,
 .menu-toggle:focus {
@@ -1267,6 +1262,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
